@@ -138,4 +138,24 @@ document.getElementById("saveBtn").addEventListener("click",function(){
         description:description
     });
 
-    renderN
+    renderNotes();
+
+    titleBox.value="";
+    contentBox.value="";
+
+});
+
+// Remove all notes
+document.getElementById("clearBtn").addEventListener("click",function(){
+
+    noteList.length=0;
+
+    renderNotes();
+
+});
+
+renderNotes();
+</script>
+
+</body>
+</html>
